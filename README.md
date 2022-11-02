@@ -1,2 +1,9 @@
-# oh-harjoitustyo
-Ohjelmistotekniikka, syksy 2022 - Helsingin yliopisto
+# Ohjelmistotekniikka, harjoitustyo
+
+## Tehtävät
+
+### Viikko 1
+
+[gitlog.txt](./laskarit/viikko1/gitlog.txt)
+
+[komentorivi.txt](./laskarit/viikko1/komentorivi.txt)
