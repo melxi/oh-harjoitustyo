@@ -1,0 +1,9 @@
+.
+├── laskarit
+│   └── viikko1
+│       └── komentorivi.txt
+├── LICENSE
+└── README.md
+
+2 directories, 3 files
+

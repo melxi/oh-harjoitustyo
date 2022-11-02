@@ -1,0 +1,11 @@
+commit 402468da3bc6eb6fceec5ef32a8cdb958ed64c79
+Author: melxi <magomed.futijev@gmail.com>
+Date:   Wed Nov 2 19:54:18 2022 +0200
+
+    Initial commit
+
+ .gitignore | 23 +++++++++++++++++++++++
+ LICENSE    | 21 +++++++++++++++++++++
+ README.md  |  2 ++
+ 3 files changed, 46 insertions(+)
+
