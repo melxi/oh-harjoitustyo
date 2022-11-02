@@ -1,3 +1,21 @@
+commit 9d07411c5ae81fda34b7e377003878099b0c941f
+Author: Futijev Magomed <magomedf@ad.helsinki.fi>
+Date:   Wed Nov 2 20:40:28 2022 +0200
+
+    Updated komentorivi.txt
+
+ laskarit/viikko1/komentorivi.txt | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 0a9fc1dc6c43bf671c8df65d23f7b7e4b41cc00a
+Author: Futijev Magomed <magomedf@ad.helsinki.fi>
+Date:   Wed Nov 2 20:28:23 2022 +0200
+
+    Updated gitlog.txt
+
+ laskarit/viikko1/gitlog.txt | 20 +++++++++++++++++++-
+ 1 file changed, 19 insertions(+), 1 deletion(-)
+
 commit d3795d434575afd8460f2e240eeaaf757c6e52e4
 Author: melxi <magomed.futijev@gmail.com>
 Date:   Wed Nov 2 20:26:26 2022 +0200
