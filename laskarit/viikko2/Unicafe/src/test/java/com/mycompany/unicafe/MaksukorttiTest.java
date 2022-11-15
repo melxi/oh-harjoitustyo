@@ -32,16 +32,12 @@ public class MaksukorttiTest {
     @Test
     public void saldoaVaheneeOikein() {
         kortti.otaRahaa(1);
-        System.out.println(kortti.saldo());
-        System.out.println(kortti.toString());
         assertEquals("saldo: 0.9", kortti.toString());
     }
     
     @Test
     public void saldoEiMuutuJosEiTarpeeksiRahaa() {
         kortti.otaRahaa(15);
-        System.out.println(kortti.saldo());
-        System.out.println(kortti.toString());
         assertEquals("saldo: 0.10", kortti.toString());
     }
 
