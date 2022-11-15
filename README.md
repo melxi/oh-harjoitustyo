@@ -10,3 +10,9 @@
 
 ### Viikko 2
 [Testikattavuus](./laskarit/viikko2/coverage.png)
+
+## Dokumentaatio
+
+[Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
+
+[Työaikakirjanpito](./dokumentaatio//tuntikirjanpito.md)
