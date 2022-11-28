@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="680.0" styleClass="navbar_container" stylesheets="@../styles/navbar.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapp.controllers.NavbarController">
+   <children>
+      <AnchorPane prefHeight="80.0" prefWidth="680.0">
+         <children>
+            <Button fx:id="homeButton" mnemonicParsing="false" prefWidth="110.0" text="LibraryApp" AnchorPane.topAnchor="16.0" />
+            <Button fx:id="authorsButton" mnemonicParsing="false" prefWidth="104.0" text="Authors" AnchorPane.rightAnchor="328.0" AnchorPane.topAnchor="16.0" />
+            <Button fx:id="addAuthorButton" mnemonicParsing="false" prefWidth="80.0" text="Add author" AnchorPane.rightAnchor="246.0" AnchorPane.topAnchor="16.0" />
+            <Button fx:id="booksButton" mnemonicParsing="false" text="Books" AnchorPane.rightAnchor="164.0" AnchorPane.topAnchor="16.0" />
+            <Button fx:id="addBookButton" mnemonicParsing="false" text="Add book" AnchorPane.rightAnchor="82.0" AnchorPane.topAnchor="16.0" />
+            <Button fx:id="logoutButton" mnemonicParsing="false" text="Logout" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="16.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

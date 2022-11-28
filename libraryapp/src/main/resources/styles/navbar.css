@@ -1,0 +1,18 @@
+.navbar_container {
+    -fx-background-color: #001B29;
+}
+
+.navbar_container Button {
+    -fx-top: 20;
+    -fx-pref-width: 82;
+    -fx-pref-height: 48;
+    -fx-font-size: 0.8em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #BDE9FF;
+    -fx-background-color: transparent;
+}
+
+.navbar_container Button:hover {
+    -fx-cursor: hand;
+}
+
