@@ -27,6 +27,7 @@ public class NavbarController implements Initializable {
         addAuthorButton.setOnAction(event -> handleAddAuthorButton());
         booksButton.setOnAction(event -> handleBooksButton());
         addBookButton.setOnAction(event -> handleAddBookButton());
+        logoutButton.setOnAction(event -> handleLogoutButton());
     }
 
     private void handleHomeButton() {
@@ -47,5 +48,8 @@ public class NavbarController implements Initializable {
 
     private void handleAddBookButton() {
         Model.getInstance().getViewFactory().getActiveView().set("Add book");
+    }
+    private void handleLogoutButton() {
+        Model.getInstance().getViewFactory().getActiveView().set("Login");
     }
 }

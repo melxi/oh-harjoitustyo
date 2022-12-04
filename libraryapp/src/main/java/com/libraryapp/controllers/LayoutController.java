@@ -24,8 +24,11 @@ public class LayoutController implements Initializable {
                     layoutParent.setCenter(Model.getInstance().getViewFactory().getBooksView());
                     return;
                 case "Add book":
-                    System.out.println("ADD BOOK");
                     layoutParent.setCenter(Model.getInstance().getViewFactory().getAddBookView());
+                    return;
+                case "Login":
+                    layoutParent.setTop(null);
+                    layoutParent.setCenter(Model.getInstance().getViewFactory().getLoginView());
                     return;
                 default:
                     layoutParent.setCenter(Model.getInstance().getViewFactory().getHomeView());

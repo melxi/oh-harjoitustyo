@@ -2,6 +2,7 @@ package com.libraryapp.views;
 
 import com.libraryapp.common.Util;
 import com.libraryapp.controllers.LayoutController;
+import com.libraryapp.models.Model;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
@@ -12,6 +13,7 @@ import javafx.stage.Stage;
 public class ViewFactory {
     public Stage stage = new Stage();
     private final StringProperty activeView;
+    private AnchorPane loginView;
     private AnchorPane homeView;
     private AnchorPane authorsView;
     private AnchorPane addAuthorView;
@@ -49,6 +51,18 @@ public class ViewFactory {
         stage.setScene(scene);
         stage.setTitle(Util.APP_TITLE);
         stage.show();
+    }
+
+    public AnchorPane getLoginView() {
+        if (loginView == null) {
+            try {
+                loginView = new FXMLLoader(getClass().getResource("/views/login.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return loginView;
     }
 
     public AnchorPane getHomeView() {
