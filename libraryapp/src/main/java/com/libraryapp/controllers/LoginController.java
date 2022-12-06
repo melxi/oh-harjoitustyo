@@ -19,15 +19,23 @@ public class LoginController implements Initializable {
     public Label passwordLabel;
     public PasswordField passwordField;
     public Button loginButton;
+    public Button registerButton;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         loginButton.setOnAction(event -> onLogin());
+        registerButton.setOnAction(event -> handleRegisterButton());
+    }
+
+    private void handleRegisterButton() {
+        Model.getInstance().getViewFactory().getActiveView().set("Register");
     }
 
     public void onLogin() {
         if (Model.getInstance().loginUser(usernameField.getText(), passwordField.getText())) {
             Model.getInstance().getViewFactory().showLayout();
+            usernameField.setText("");
+            passwordField.setText("");
         } else {
             usernameField.setText("");
             passwordField.setText("");

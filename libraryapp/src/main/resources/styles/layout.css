@@ -1,0 +1,20 @@
+.layout_container {
+    -fx-background-color: #00334D;
+}
+
+.layout_container Text, Label {
+    -fx-text-fill: #BDE9FF;
+    -fx-fill: #BDE9FF;
+}
+
+.layout_container TextField {
+    -fx-background-color: #00AAFF;
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #BDE9FF;
+}
+
+.layout_container Button {
+    -fx-background-color: #A8E2FF;
+    -tx-text-fill: #004466;
+    -fx-font-weight: bold;
+}

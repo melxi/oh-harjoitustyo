@@ -1,0 +1,46 @@
+.register_container {
+    -fx-background-color: #EEE;
+}
+
+.register_logo_container {
+    -fx-background-color: #001B29;
+    -fx-alignment: center;
+}
+
+.register_logo_container Text {
+    -fx-font-size: 2em;
+    -fx-font-weight: bold;
+    -fx-fill: #FFF;
+}
+
+.register_form_container {
+    -fx-spacing: 15;
+    -fx-background-color: #00334D;
+}
+
+.register_form_container Label {
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #BDE9FF;
+}
+
+.register_form_container TextField, PasswordField {
+    -fx-pref-width: 440;
+    -fx-pref-height: 38;
+    -fx-background-color: #00699E;
+    -fx-font-size: 1.3em;
+    -fx-text-fill: #BDE9FF;
+}
+
+.register_form_container Button {
+    -fx-pref-width: 440;
+    -fx-pref-height: 38;
+    -fx-background-color: #A8E2FF;
+    -fx-font-size: 1.5em;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00699E;
+}
+
+.register_form_container Button:hover {
+    -fx-cursor: hand;
+}

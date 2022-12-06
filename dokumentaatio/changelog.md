@@ -5,3 +5,6 @@
 
 ## Viikko 4
 - Käyttäjä voi kirjautua sisään
+
+## Viikko 5
+- Käyttäjä voi rekiströiytyä ja lisäätä kirjailijan

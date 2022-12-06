@@ -30,6 +30,10 @@ public class LayoutController implements Initializable {
                     layoutParent.setTop(null);
                     layoutParent.setCenter(Model.getInstance().getViewFactory().getLoginView());
                     return;
+                case "Register":
+                    layoutParent.setTop(null);
+                    layoutParent.setCenter(Model.getInstance().getViewFactory().getRegisterView());
+                    return;
                 default:
                     layoutParent.setCenter(Model.getInstance().getViewFactory().getHomeView());
             }

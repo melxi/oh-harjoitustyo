@@ -26,6 +26,8 @@
                   <Insets top="20.0" />
                </VBox.margin>
             </Button>
+            <Label text="Don't have an account?" />
+            <Button fx:id="registerButton" mnemonicParsing="false" prefWidth="100.0" text="REGISTER" />
          </children>
       </VBox>
    </children>

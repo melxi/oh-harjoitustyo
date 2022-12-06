@@ -3,6 +3,7 @@ package com.libraryapp.views;
 import com.libraryapp.common.Util;
 import com.libraryapp.controllers.LayoutController;
 import com.libraryapp.models.Model;
+import javafx.application.Application;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.beans.property.StringProperty;
 import javafx.fxml.FXMLLoader;
@@ -10,10 +11,11 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class ViewFactory {
+public class ViewFactory extends Application {
     public Stage stage = new Stage();
     private final StringProperty activeView;
     private AnchorPane loginView;
+    private AnchorPane registerView;
     private AnchorPane homeView;
     private AnchorPane authorsView;
     private AnchorPane addAuthorView;
@@ -63,6 +65,18 @@ public class ViewFactory {
         }
 
         return loginView;
+    }
+
+    public AnchorPane getRegisterView() {
+        if (registerView == null) {
+            try {
+                registerView = new FXMLLoader(getClass().getResource("/views/register.fxml")).load();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        }
+
+        return registerView;
     }
 
     public AnchorPane getHomeView() {
@@ -123,5 +137,14 @@ public class ViewFactory {
         }
 
         return addBookView;
+    }
+
+    @Override
+    public void start(Stage stage) {
+        Model.getInstance().getViewFactory().showLoginPage();
+    }
+
+    public static void main(String[] args) {
+        launch();
     }
 }
