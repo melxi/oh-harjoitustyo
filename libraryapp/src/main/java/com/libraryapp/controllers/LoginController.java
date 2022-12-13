@@ -4,10 +4,7 @@ import com.libraryapp.models.Model;
 import com.libraryapp.views.ViewFactory;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.PasswordField;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -37,6 +34,11 @@ public class LoginController implements Initializable {
             usernameField.setText("");
             passwordField.setText("");
         } else {
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Wrong credentials");
+            alert.setHeaderText(null);
+            alert.setContentText("Wrong username or password");
+            alert.showAndWait();
             usernameField.setText("");
             passwordField.setText("");
         }

@@ -15,7 +15,11 @@ public class AuthorsController implements Initializable {
 
     @Override
     public void initialize(URL location, ResourceBundle resources) {
+        System.out.println("loaded");
         ArrayList<String> authors = Model.getInstance().listAuthors();
+        for (String author: authors) {
+            System.out.println(author);
+        }
         authorsList.getItems().addAll(authors);
     }
 }

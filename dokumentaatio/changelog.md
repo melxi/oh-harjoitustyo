@@ -7,4 +7,7 @@
 - Käyttäjä voi kirjautua sisään
 
 ## Viikko 5
-- Käyttäjä voi rekiströiytyä ja lisäätä kirjailijan
+- Käyttäjä voi rekiströiytyä ja lisätä kirjailijaa
+
+## Viikko 6
+- Ei mitään muutoksia sovelluksen toimintoihin
