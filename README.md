@@ -40,3 +40,7 @@ Checkstyle tarkastuksen voi suorittaa komennolla
 ```
 mvn jxr:jxr checkstyle:checkstyle
 ```
+
+## Julkaisut
+[viikko 5](https://github.com/melxi/ot-harjoitustyo/releases/tag/viikko5)  
+[viikko 6](https://github.com/melxi/ot-harjoitustyo/releases/tag/viikko6)
