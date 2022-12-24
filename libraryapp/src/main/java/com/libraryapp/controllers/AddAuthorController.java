@@ -23,5 +23,6 @@ public class AddAuthorController implements Initializable {
     private void handleCreateButton() {
         if (Model.getInstance().addAuthor(nameField.getText()))
             Model.getInstance().getViewFactory().getActiveView().set("Authors");
+            nameField.setText("");
     }
 }

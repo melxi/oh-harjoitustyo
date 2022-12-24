@@ -11,7 +11,8 @@
     <Text layoutX="42.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="New author" AnchorPane.leftAnchor="42.0" AnchorPane.topAnchor="29.51220703125">
       <font>
          <Font size="35.0" />
-      </font></Text>
+      </font>
+    </Text>
    <Label fx:id="nameLabel" layoutX="42.0" layoutY="85.0" text="Name">
       <font>
          <Font size="21.0" />

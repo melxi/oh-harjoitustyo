@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapp.controllers.AuthorsController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="layout_container" stylesheets="@../styles/layout.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapp.controllers.AuthorsController">
     <Text layoutX="24.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All authors" AnchorPane.leftAnchor="24.0" AnchorPane.topAnchor="25.0">
       <font>
          <Font size="35.0" />
       </font></Text>
-   <ListView fx:id="authorsList" layoutX="24.0" layoutY="100.0" prefHeight="275.0" prefWidth="550.0" />
+   <ScrollPane layoutX="24.0" layoutY="87.0" styleClass="edge-to-edge" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="80.0">
+      <content>
+         <VBox fx:id="authorsList" alignment="CENTER" prefHeight="295.0" prefWidth="615.0" />
+      </content>
+   </ScrollPane>
 </AnchorPane>

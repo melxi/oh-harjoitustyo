@@ -5,8 +5,14 @@
 <?import javafx.scene.text.Text?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapp.controllers.HomeController">
-    <Text layoutX="225.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Home" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="169.66064453125">
+    <Text fx:id="greetingLabel" layoutX="225.0" layoutY="217.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!" AnchorPane.leftAnchor="225.0" AnchorPane.topAnchor="169.66064453125">
       <font>
          <Font size="51.0" />
-      </font></Text>
+      </font>
+    </Text>
+   <Text fx:id="nameLabel" layoutX="225.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome!">
+      <font>
+         <Font size="51.0" />
+      </font>
+   </Text>
 </AnchorPane>

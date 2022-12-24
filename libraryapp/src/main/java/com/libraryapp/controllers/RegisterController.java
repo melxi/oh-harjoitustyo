@@ -31,7 +31,6 @@ public class RegisterController implements Initializable {
     }
 
     public void onRegister() {
-
         if (Model.getInstance().registerUser(nameField.getText(), usernameField.getText(), passwordField.getText())) {
             Model.getInstance().getViewFactory().showLayout();
         }

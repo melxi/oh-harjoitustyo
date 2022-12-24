@@ -5,16 +5,42 @@
 .layout_container Text, Label {
     -fx-text-fill: #BDE9FF;
     -fx-fill: #BDE9FF;
+    -fx-font-size: 1.3em;
 }
 
-.layout_container TextField {
+.layout_container TextField, ChoiceBox, DatePicker, Spinner {
     -fx-background-color: #00AAFF;
     -fx-font-size: 1.3em;
     -fx-text-fill: #BDE9FF;
+    -fx-control-inner-background: #00AAFF;
 }
 
 .layout_container Button {
     -fx-background-color: #A8E2FF;
     -tx-text-fill: #004466;
     -fx-font-weight: bold;
+    -fx-cursor: hand;
+}
+
+.layout_container .scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.layout_container VBox {
+    -fx-background-color: #00334D;
+}
+
+.author_group {
+    -fx-padding: 10;
+}
+
+.author_group Label {
+    -fx-pref-width: 450;
+    -fx-pref-height: 40;
+    -fx-font-size: 1.3em;
+    -fx-font-weight: bold;
+}
+
+.delete_author {
+    -fx-background-color: #FF5500;
 }

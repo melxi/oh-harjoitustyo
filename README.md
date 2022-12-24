@@ -5,6 +5,8 @@ Sovelluksen avulla käyttäjät pystyvät lisäämään kirjailijoita sekä kirj
 
 [Vaatimusmäärittely](./dokumentaatio/vaatimusmaarittely.md)
 
+[Arkkitehtuurikuvaus](./dokumentaatio/arkkitehtuurikuvaus.md)
+
 [Työaikakirjanpito](./dokumentaatio//tuntikirjanpito.md)
 
 [Changelog](./dokumentaatio/changelog.md)

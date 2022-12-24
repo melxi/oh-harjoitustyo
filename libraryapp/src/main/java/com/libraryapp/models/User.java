@@ -20,7 +20,4 @@ public class User {
     public StringProperty usernameProperty() {
         return this.username;
     }
-    public StringProperty passwordProperty() {
-        return this.password;
-    }
 }

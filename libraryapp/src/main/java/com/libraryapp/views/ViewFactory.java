@@ -56,84 +56,71 @@ public class ViewFactory extends Application {
     }
 
     public AnchorPane getLoginView() {
-        if (loginView == null) {
-            try {
-                loginView = new FXMLLoader(getClass().getResource("/views/login.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            loginView = new FXMLLoader(getClass().getResource("/views/login.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return loginView;
     }
 
     public AnchorPane getRegisterView() {
-        if (registerView == null) {
-            try {
-                registerView = new FXMLLoader(getClass().getResource("/views/register.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            registerView = new FXMLLoader(getClass().getResource("/views/register.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return registerView;
     }
 
     public AnchorPane getHomeView() {
-        if (homeView == null) {
-            try {
-                homeView = new FXMLLoader(getClass().getResource("/views/home.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            homeView = new FXMLLoader(getClass().getResource("/views/home.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return homeView;
     }
 
     public AnchorPane getAuthorsView() {
-        if (authorsView == null) {
-            try {
-                authorsView = new FXMLLoader(getClass().getResource("/views/authors.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            authorsView = new FXMLLoader(getClass().getResource("/views/authors.fxml")).load();
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return authorsView;
     }
 
     public AnchorPane getAddAuthorView() {
-        if (addAuthorView == null) {
-            try {
-                addAuthorView = new FXMLLoader(getClass().getResource("/views/addauthor.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            addAuthorView = new FXMLLoader(getClass().getResource("/views/addauthor.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return addAuthorView;
     }
 
     public AnchorPane getBooksView() {
-        if (booksView == null) {
-            try {
-                booksView = new FXMLLoader(getClass().getResource("/views/books.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            booksView = new FXMLLoader(getClass().getResource("/views/books.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return booksView;
     }
 
     public AnchorPane getAddBookView() {
-        if (addBookView == null) {
-            try {
-                addBookView = new FXMLLoader(getClass().getResource("/views/addbook.fxml")).load();
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+        try {
+            addBookView = new FXMLLoader(getClass().getResource("/views/addbook.fxml")).load();
+        } catch (Exception e) {
+            e.printStackTrace();
         }
 
         return addBookView;

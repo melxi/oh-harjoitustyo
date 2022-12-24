@@ -25,6 +25,7 @@ public class LoginController implements Initializable {
     }
 
     private void handleRegisterButton() {
+        Model.getInstance().getViewFactory().showLayout();
         Model.getInstance().getViewFactory().getActiveView().set("Register");
     }
 
