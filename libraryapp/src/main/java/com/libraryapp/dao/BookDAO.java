@@ -2,6 +2,7 @@ package com.libraryapp.dao;
 
 import java.sql.Date;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.time.LocalDate;
 
@@ -22,5 +23,19 @@ public class BookDAO {
         }
 
         return false;
+    }
+
+    public ResultSet getBooks() {
+        ResultSet resultSet = null;
+        String sql = "SELECT * FROM books";
+
+        try {
+            PreparedStatement pstmt = DatabaseDriver.connection.prepareStatement(sql);
+            resultSet = pstmt.executeQuery();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return resultSet;
     }
 }

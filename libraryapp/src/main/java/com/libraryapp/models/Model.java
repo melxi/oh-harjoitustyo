@@ -19,6 +19,7 @@ public class Model {
     private AuthorDAO authorDAO;
     private ArrayList<String> authors;
     private BookDAO bookDAO;
+    private ArrayList<Book> books;
 
     private Model() {
         viewFactory = new ViewFactory();
@@ -98,11 +99,28 @@ public class Model {
     }
 
     public boolean addBook(String title, String author, LocalDate date, Integer pages) {
-        System.out.println("addBook " + title);
         if (bookDAO.createBook(title, author, date, pages)) {
             return true;
         }
 
         return false;
+    }
+
+    public ArrayList<Book> listBooks() {
+        ArrayList books = new ArrayList<>();
+        ResultSet resultSet = bookDAO.getBooks();
+
+        try {
+            if (resultSet.isBeforeFirst()) {
+                while (resultSet.next()) {
+                    books.add(new Book(resultSet.getString("title"), resultSet.getString("author"),  resultSet.getDate("publish_date"), resultSet.getInt("pages")));
+                }
+            }
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return books;
     }
 }

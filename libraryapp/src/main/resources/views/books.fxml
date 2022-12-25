@@ -1,12 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapp.controllers.BooksController">
-    <Text layoutX="232.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Books" AnchorPane.leftAnchor="232.0" AnchorPane.topAnchor="178.51220703125">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="layout_container" stylesheets="@../styles/layout.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.libraryapp.controllers.BooksController">
+    <Text layoutX="24.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="All books" AnchorPane.leftAnchor="36.0" AnchorPane.topAnchor="24.0">
       <font>
          <Font size="35.0" />
       </font></Text>
+   <ScrollPane layoutX="34.0" layoutY="52.0" prefHeight="295.0" prefWidth="550.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0" AnchorPane.topAnchor="80.0">
+      <content>
+         <VBox fx:id="booksList" prefHeight="295.0" prefWidth="616.0">
+            <children>
+               <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="100.0" prefWidth="614.0">
+                  <children>
+                     <VBox prefHeight="200.0" prefWidth="100.0" />
+                     <Label text="Label" />
+                     <Label text="Label">
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                     </Label>
+                     <Label text="Label">
+                        <HBox.margin>
+                           <Insets left="20.0" />
+                        </HBox.margin>
+                     </Label>
+                  </children>
+               </HBox>
+            </children></VBox>
+      </content>
+   </ScrollPane>
 </AnchorPane>

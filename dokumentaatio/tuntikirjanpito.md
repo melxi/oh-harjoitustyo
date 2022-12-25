@@ -9,3 +9,4 @@
 | 13.12  | 2   | Lisätty checkstyle tarkastus ja tehty muutoksia README.md tiedostoon |
 | 17.12  | 3   | Kirjan lisääminen sivu muotoiltu ja aloitettu arkkitehtuurikuvaus |
 | 18.12  | 4   | Tehty muutoksia koodiin ja viimeistelty kirjan lisäystoiminto |
+| 19.12  | 2   | Aloitettu kirjojen listaaminen toiminto ja testien kirjoitus |

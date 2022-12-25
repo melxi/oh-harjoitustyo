@@ -11,3 +11,6 @@
 
 ## Viikko 6
 - Ei mitään muutoksia sovelluksen toimintoihin
+
+## Viikko 7
+- Käyttäjä voi nähdä listan kirjailijoista sekä lisätä kirjan
